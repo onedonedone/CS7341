@@ -6,7 +6,7 @@ const base = process.env.GITHUB_ACTIONS ? "/CS7341/" : "/";
 
 export default defineConfig({
     base,
-    description: "notebook scaffold.",
+    description: "Algo notebook by done",
     head: [["link", { href: `${base}icon/dt.ico`, rel: "icon" }]],
     markdown: { config: (md) => void md.use(katex) },
     srcExclude: ["public/**"],
@@ -27,7 +27,7 @@ export default defineConfig({
                 text: "Examples",
             },
         ],
-        socialLinks: [{ icon: "github", link: "https://github.com/onedonedone/donetown" }],
+        socialLinks: [{ icon: "github", link: "https://github.com/onedonedone/CS7341" }],
     },
     title: "donetown",
     vite: { plugins: [{ handleHotUpdate: () => void parseCache.clear(), name: "clear-cache" }] },
